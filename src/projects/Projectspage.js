@@ -10,7 +10,7 @@ export class ProjectPage extends React.Component{
                 <div className="maincontainer">
             <div className="back">
                 <h2>Movie 101</h2>
-                <p>Welcome to my very first project from Web Development course. It's a website with movie ratings where you can search by name, year, categories etc. You have an advanced search so you can find what you're looking for. You cand also register, and once you're sign in you can edith, delete and add movies. Here you can access my github link.<br></br><br></br> Enjoy!<br></br>
+                <p>Welcome to my very first project from Web Development course. It's a website with movie ratings where you can search by name, year, categories etc. You have an advanced search so you can find what you're looking for. You can also register, and once you're sign in you can edit, delete and add movies. Here you can access my github link.<br></br><br></br> Enjoy!<br></br>
                <br></br> <br></br></p>
                <p className="git-link" onClick={()=>{
                 window.open("https://github.com/penceajr/movies101","_blank")
@@ -18,7 +18,7 @@ export class ProjectPage extends React.Component{
             </div>
             <div className="front">
                 <div className="image">
-                <img src={movie} className="movie101"/>
+                <img src={movie} className="movie101" alt="mov"/>
                 </div>
             </div>
         </div>

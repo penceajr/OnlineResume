@@ -1,32 +1,30 @@
-import React from 'react';
-import './Contact.css';
 import emailjs from "emailjs-com";
+import React from 'react';
 
-export class Contact extends React.Component{
+export default function ContactUs() {
 
-  sendEmail(e) {
+    function sendEmail(e) {
         e.preventDefault();
-        emailjs.sendForm('service_ve3ede8', 'template_azx4acc', e.target, 'user_lfDtmspXFxTCuHtVAnmeE')
-        .then((result) => {
-        console.log(result.text);
-        }, (error) => {
-        console.log(error.text);
-        });
-        e.target.reset();
-        }
 
-      render() {
-        return(
-            <div>
+    emailjs.sendForm('gmail', 'youtube_template', e.target, 'user_JABO21I8Gm6sxByJH17Nu')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    }
+
+    return(
+        <div>
             <div className="container">
-                <h2>Contact me</h2>
-            <form onSubmit={this.sendEmail}>
+            <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
                             <input type="text" className="form-control" placeholder="Name" name="name"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Your Email Address" name="email"/>
+                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
                             <input type="text" className="form-control" placeholder="Subject" name="subject"/>
@@ -41,8 +39,5 @@ export class Contact extends React.Component{
                 </form>
             </div>
         </div>
-        );
-      }
-    }
-    
- 
+    )
+}

@@ -1,0 +1,38 @@
+.work-main-content{
+    margin: 50px;
+    margin-left: 350px;
+    
+}
+
+.work-title{
+    margin-left: 550px;
+    margin-top: 50px ;
+}
+
+.first-content{
+    margin-bottom: 20px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 15px;
+    border: 3px solid black;
+    box-shadow: 5px 0 5px 5px gray;
+}
+
+.second-content{
+    margin-top: 40px;
+    width: 500px;
+    border-radius: 20px;
+    padding: 15px;
+    border: 3px solid black;
+    box-shadow: 5px 0 5px 5px gray;
+}
+
+.work-info{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.span-color{
+    font-weight: bold;
+    color: black;
+}
