@@ -11,6 +11,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "animate.css-react": "^1.1.0",
+    "axios": "^0.21.0",
+    "emailjs-com": "^2.6.3",
     "prettierrc": "0.0.0-5",
     "react": "^17.0.1",
     "react-animated-css": "^1.2.1",

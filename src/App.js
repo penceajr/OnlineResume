@@ -8,8 +8,12 @@ import {
 import { Homepage } from './homepage/Homepage';
 import { SkillsPage } from '../src/skills/Skills';
 import { ProjectPage } from './projects/Projectspage';
+import { Employement } from './workplace/Workplace';
+import { Aboutme } from './aboutme/Aboutme';
+import { Contact } from './Contact/Contact';
 
 function App() {
+  
   return (
   <Router>
         <Header />
@@ -23,7 +27,15 @@ function App() {
         <Route path="/skills">
           <SkillsPage />
         </Route>
-        
+        <Route path="/employement">
+          <Employement />
+        </Route>
+        <Route path="/about-me">
+          <Aboutme />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
     </Switch>
   </Router>
    
