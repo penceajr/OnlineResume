@@ -6,23 +6,27 @@ import {
   Route,
 } from "react-router-dom";
 import { Homepage } from './homepage/Homepage';
-
-
-
+import { SkillsPage } from '../src/skills/Skills';
+import { ProjectPage } from './projects/Projectspage';
 
 function App() {
   return (
-    <div>
- 
-        <Router>
+  <Router>
         <Header />
-          <Switch>
-      <Route exact path="/">
-        <Homepage />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Homepage />
+        </Route>
+        <Route path="/my-projects">
+          <ProjectPage />
+        </Route>
+        <Route path="/skills">
+          <SkillsPage />
+        </Route>
+        
     </Switch>
-    </Router>
-    </div>
+  </Router>
+   
   );
 }
 

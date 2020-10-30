@@ -2,9 +2,6 @@ import React from 'react';
 import './Homepage.css';
 import photo from '../cristi.jpg';
 
-
-
-
 export class Homepage extends React.Component{
    
     render(){
@@ -12,7 +9,7 @@ export class Homepage extends React.Component{
             <div className="main-content">
                 <div className="row">
                     <div className="col-sm-6">
-                        <div className="ih-item circle effect3 left_to_right"><a href="#">
+                        <div className="ih-item circle effect3 left_to_right"><a href="/">
                             <div className="img"><img src={photo} alt="img"/>
                             </div>
                             <div className="info">
